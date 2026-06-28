@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Anjali Mhetre - Computer Science Student & Full-Stack Developer. Showcasing hands-on projects in web development, Python, SQL, and REST APIs.">
+  <meta name="theme-color" content="#0a0b0e">
+  <title>Anjali Mhetre | Full-Stack Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Glowing Gradients -->
+  <div class="glow-wrapper" aria-hidden="true">
+    <div class="glow-bubble-1"></div>
+    <div class="glow-bubble-2"></div>
+    <div class="glow-bubble-3"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#" class="logo" aria-label="Go to top">
+        AM<span class="logo-dot"></span>
+      </a>
+      
+      <nav id="nav-menu" class="nav-menu">
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Expertise</a>
+        <a href="#contact" class="nav-btn">Get In Touch</a>
+      </nav>
+
+      <button id="burger-menu" class="burger-menu" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="logo-dot"></span> Open to Opportunities
+          </div>
+          <h1 class="hero-title">
+            Building software that <span>makes a difference.</span>
+          </h1>
+          <p class="hero-desc">
+            Computer Science student with hands-on experience in full-stack web development, Python, SQL, and REST APIs. Proven ability to write clean, maintainable code, collaborate with cross-functional teams, and contribute to documentation and coding standards. Eager to apply and expand skills in front-end, back-end, and test automation under senior developer mentorship in an Agile environment.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#work" class="btn-primary">
+              View Work
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn-secondary">Let's Talk</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-glow-back"></div>
+          <div class="hero-img-wrapper">
+            <img src="assets/hero_visual.png" alt="Sleek financial dashboard mockup representing visual systems work" width="460" height="460">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work / Projects Section -->
+    <section id="work">
+      <div class="section-header">
+        <span class="section-subtitle">Case Studies</span>
+        <h2 class="section-title">Selected Works</h2>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="work-filters" role="tablist" aria-label="Project categories">
+        <button class="filter-btn active" data-category="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-category="Web" role="tab" aria-selected="false">Web</button>
+        <button class="filter-btn" data-category="Mobile" role="tab" aria-selected="false">Mobile</button>
+        <button class="filter-btn" data-category="Open Source" role="tab" aria-selected="false">Open Source</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        <!-- Project 1: Health Navigator -->
+        <article class="project-card" data-id="1" data-category="Web">
+          <div class="project-img-box">
+            <div class="project-overlay-glow"></div>
+            <img src="assets/healthtech_mockup.png" alt="Health Navigator Web App" loading="lazy" width="550" height="340">
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-category">Web / HealthTech</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3 class="project-title">Health Navigator</h3>
+            <p class="project-excerpt">A full-stack health navigation web application helping users find relevant medical resources, track wellness metrics, and connect with healthcare services efficiently.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Full-Stack</span>
+              <span class="project-tag">REST API</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Social Enhancement App -->
+        <article class="project-card" data-id="2" data-category="Mobile">
+          <div class="project-img-box">
+            <div class="project-overlay-glow"></div>
+            <img src="assets/collab_mockup.png" alt="Social Enhancement App Mockup" loading="lazy" width="550" height="340">
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-category">Mobile / Social</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3 class="project-title">Social Enhancement App</h3>
+            <p class="project-excerpt">A social connectivity application designed to improve digital interactions, featuring community features, user feeds, and enhanced engagement tools.</p>
+            <div class="project-tags">
+              <span class="project-tag">Mobile App</span>
+              <span class="project-tag">SQL</span>
+              <span class="project-tag">REST APIs</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Apache Superset Contribution -->
+        <article class="project-card" data-id="3" data-category="Open Source">
+          <div class="project-img-box">
+            <div class="project-overlay-glow"></div>
+            <img src="assets/fintech_mockup.png" alt="Apache Superset Data Visualization Platform" loading="lazy" width="550" height="340">
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-category">Open Source / Data</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3 class="project-title">Apache Superset</h3>
+            <p class="project-excerpt">Contributed to Apache Superset, a leading open-source data visualization and business intelligence platform used by thousands of organizations worldwide.</p>
+            <div class="project-tags">
+              <span class="project-tag">Open Source</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Data Visualization</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- About & Experience Section -->
+    <section id="about">
+      <div class="about-grid">
+        <div class="about-bio">
+          <div class="section-header">
+            <span class="section-subtitle">About Me</span>
+            <h2 class="section-title">Anjali Mhetre</h2>
+          </div>
+          <div class="about-bio-text">
+            <p>I'm a Computer Science student with a passion for full-stack web development, clean code architecture, and building solutions that make a real-world impact. I have hands-on experience with Python, SQL, REST APIs, and cross-functional collaboration.</p>
+            <p>I thrive in Agile environments, actively contributing to open-source projects and building applications from the ground up. My goal is to grow under senior mentorship, expanding my skills in front-end, back-end, and test automation engineering.</p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Projects Shipped</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">Technologies Mastered</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Timeline -->
+        <div class="timeline-container">
+          <h3 class="timeline-role" style="margin-bottom: 2.5rem; font-family: var(--font-heading);">Education & Experience</h3>
+          
+          <div class="timeline">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-header">
+                <h4 class="timeline-role">B.E. Computer Science <span class="timeline-company">@ University</span></h4>
+                <span class="timeline-duration">2022 - Present</span>
+              </div>
+              <p class="timeline-desc">Pursuing a Bachelor of Engineering in Computer Science, focusing on software engineering, data structures, algorithms, database management, and web development. Actively involved in project work and open-source contributions.</p>
+              <div class="timeline-skills">
+                <span class="timeline-skill">Data Structures</span>
+                <span class="timeline-skill">Algorithms</span>
+                <span class="timeline-skill">DBMS</span>
+              </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-header">
+                <h4 class="timeline-role">Open Source Contributor <span class="timeline-company">@ Apache Superset</span></h4>
+                <span class="timeline-duration">2024</span>
+              </div>
+              <p class="timeline-desc">Contributed to Apache Superset, an enterprise-grade open-source data visualization and business intelligence platform. Worked on feature improvements and bug fixes, following community coding standards and review processes.</p>
+              <div class="timeline-skills">
+                <span class="timeline-skill">Python</span>
+                <span class="timeline-skill">Open Source</span>
+                <span class="timeline-skill">Code Review</span>
+              </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-header">
+                <h4 class="timeline-role">Full-Stack Developer <span class="timeline-company">@ Personal Projects</span></h4>
+                <span class="timeline-duration">2023 - Present</span>
+              </div>
+              <p class="timeline-desc">Independently designed, developed, and deployed full-stack web and mobile applications including Health Navigator and a Social Enhancement App, applying REST API design, SQL databases, and clean code principles.</p>
+              <div class="timeline-skills">
+                <span class="timeline-skill">Python</span>
+                <span class="timeline-skill">REST APIs</span>
+                <span class="timeline-skill">SQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Expertise Section -->
+    <section id="skills">
+      <div class="section-header">
+        <span class="section-subtitle">Expertise</span>
+        <h2 class="section-title">Core Capabilities</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Skill 1 -->
+        <div class="skill-card">
+          <div class="skill-icon-box" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7 7"></path><path d="M3 21l7-7"></path></svg>
+          </div>
+          <h3 class="skill-title">Interaction Design</h3>
+          <p class="skill-desc">Crafting highly interactive, kinetic workflows, interface logic, and custom micro-animations that make applications feel alive and intuitive.</p>
+          <div class="skill-keywords">
+            <span class="skill-keyword">Advanced Prototyping</span>
+            <span class="skill-keyword">Motion Frameworks</span>
+            <span class="skill-keyword">Transition Choreography</span>
+          </div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="skill-card">
+          <div class="skill-icon-box" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+          <h3 class="skill-title">User Research</h3>
+          <p class="skill-desc">Uncovering structural design obstacles and opportunity patterns via contextual interviews, analytics funnel reviews, and heuristic tests.</p>
+          <div class="skill-keywords">
+            <span class="skill-keyword">Usability Auditing</span>
+            <span class="skill-keyword">Persona Modeling</span>
+            <span class="skill-keyword">Cognitive Mapping</span>
+          </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="skill-card">
+          <div class="skill-icon-box" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+          </div>
+          <h3 class="skill-title">Visual Systems</h3>
+          <p class="skill-desc">Creating scalable design systems, harmonious color palettes, modern dark mode interfaces, and unique typography hierarchy mappings.</p>
+          <div class="skill-keywords">
+            <span class="skill-keyword">Design System Tokenization</span>
+            <span class="skill-keyword">Obsidian Glassmorphism</span>
+            <span class="skill-keyword">WCAG 2.1 Compliance</span>
+          </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="skill-card">
+          <div class="skill-icon-box" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
+          </div>
+          <h3 class="skill-title">Product Strategy</h3>
+          <p class="skill-desc">Translating strict business goals and core engineering requirements into cohesive developer roadmaps and pixel-perfect layouts.</p>
+          <div class="skill-keywords">
+            <span class="skill-keyword">A/B Funnel Testing</span>
+            <span class="skill-keyword">Merchant Experience Ops</span>
+            <span class="skill-keyword">Cross-functional Handoff</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div>
+            <span class="section-subtitle">Get In Touch</span>
+            <h2 class="contact-headline">Let's craft the next digital standard.</h2>
+            <p class="contact-pitch">Have a project in mind, or looking to augment your product team with premium design systems and visual standards? Reach out below.</p>
+          </div>
+
+          <ul class="contact-details">
+            <li class="contact-detail-item">
+              <div class="contact-detail-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-detail-text">
+                <span class="contact-detail-label">Email Me</span>
+                <span class="contact-detail-val">anjalimhetre7@gmail.com</span>
+              </div>
+            </li>
+            <li class="contact-detail-item">
+              <div class="contact-detail-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact-detail-text">
+                <span class="contact-detail-label">Based In</span>
+                <span class="contact-detail-val">India (Open to Remote)</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/anjali-mhetre22" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://github.com/anjalimhetre" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="mailto:anjalimhetre7@gmail.com" class="social-btn" aria-label="Send Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-box">
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="form-name" class="form-label">Full Name</label>
+              <input type="text" id="form-name" class="form-input" placeholder="Anjali Mhetre" required>
+              <div class="form-error">Please enter your name.</div>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-email" class="form-label">Email Address</label>
+              <input type="email" id="form-email" class="form-input" placeholder="name@company.com" required>
+              <div class="form-error">Please enter a valid email address.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="form-msg" class="form-label">Your Message</label>
+              <textarea id="form-msg" class="form-textarea" placeholder="Tell me about your project, timelines, and visual expectations..." required></textarea>
+              <div class="form-error">Please write a message.</div>
+            </div>
+
+            <button type="submit" class="form-submit-btn">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+            
+            <div id="form-status" class="form-status" role="alert"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Reusable Detail Modal (Case Study Explorer) -->
+  <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <button id="modal-close" class="modal-close-btn" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="modal-hero">
+        <div class="modal-hero-overlay"></div>
+        <img id="modal-hero-img" src="" alt="">
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-header-info">
+          <span id="modal-category" class="modal-category"></span>
+          <h2 id="modal-title" class="modal-title"></h2>
+          
+          <div class="modal-meta-grid">
+            <div class="modal-meta-item">
+              <span class="modal-meta-item-label">Client</span>
+              <div id="meta-client" class="modal-meta-item-val"></div>
+            </div>
+            <div class="modal-meta-item">
+              <span class="modal-meta-item-label">Role</span>
+              <div id="meta-role" class="modal-meta-item-val"></div>
+            </div>
+            <div class="modal-meta-item">
+              <span class="modal-meta-item-label">Duration</span>
+              <div id="meta-duration" class="modal-meta-item-val"></div>
+            </div>
+            <div class="modal-meta-item">
+              <span class="modal-meta-item-label">Year</span>
+              <div id="meta-year" class="modal-meta-item-val"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study Sections -->
+        <article class="case-study-content">
+          <section class="case-study-section" style="padding: 0; margin-bottom: 3.5rem;">
+            <h3 class="case-study-section-title">Overview</h3>
+            <div class="case-study-section-content">
+              <p id="modal-overview"></p>
+            </div>
+          </section>
+
+          <section class="case-study-section" style="padding: 0; margin-bottom: 3.5rem;">
+            <h3 class="case-study-section-title">The Challenge</h3>
+            <div class="case-study-section-content">
+              <p id="modal-problem"></p>
+            </div>
+          </section>
+
+          <section class="case-study-section" style="padding: 0; margin-bottom: 3.5rem;">
+            <h3 class="case-study-section-title">The Solution</h3>
+            <div class="case-study-section-content">
+              <p id="modal-solution"></p>
+            </div>
+          </section>
+
+          <section class="case-study-section" style="padding: 0; margin-bottom: 3.5rem;">
+            <h3 class="case-study-section-title">Design Process</h3>
+            <div class="case-study-section-content">
+              <p id="modal-process"></p>
+            </div>
+          </section>
+
+          <section class="case-study-section" style="padding: 0;">
+            <h3 class="case-study-section-title">Results & Business Impact</h3>
+            <div class="case-study-section-content">
+              <p id="modal-results"></p>
+              <div id="modal-metrics" class="metrics-grid">
+                <!-- Metrics boxes dynamically generated in app.js -->
+              </div>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="footer-copyright">&copy; 2026 Anjali Mhetre. All rights reserved. Built with Vanilla HTML/CSS/JS.</p>
+      <ul class="footer-links">
+        <li><a href="#work" class="footer-link">Selected Work</a></li>
+        <li><a href="#about" class="footer-link">Experience</a></li>
+        <li><a href="#skills" class="footer-link">Capabilities</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
